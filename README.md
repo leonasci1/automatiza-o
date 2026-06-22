@@ -51,6 +51,63 @@ Para encerrar a sua explicação, destaque os ganhos que justificam essa arquite
 
 Governança e Auditoria: Cada salvamento gera uma versão com carimbo de data, hora e usuário. Nada se perde, e o histórico de comentários documenta todo o "vai e vem" sem apagar o passado.
 
+
+
+
+
+D Mudança -> será o ID do List, criado automaticamente com a criação de novo item
+Status da Mudança (coluna Calculada direto no List de acordo com o preenchimento das colunas)
+ 
+ 
+Formulário Preliminar de Solicitação de Mudança
+Nome do Projeto (tipo Choice - pode pre setar as opções Ceará e Sergipe)
+Solicitante (tipo Pessoa da Organização)
+Gestor do Solicitante (tipo Pessoa da Organização)
+Área solicitante (tipo Texto Curto, talvez vire Choice)
+Título da Mudança (tipo Texto Curto)
+Descrição da Mudança (tipo Texto Multilinha)
+Classificação da Mudança (tipo Choice, Emergencial e Não emergencial)
+Natureza da Mudança (tipo Choice, Mudança de escopo e Mudança técnica)
+Origem da Mudança (tipo Texto Curto, talvez vire Choice)
+Gerência Interessada (aqui vai ser discutido depois se vai mudar para Gerente, mas pode manter como tipo Texto Curto)
+ 
+Formulário de Solicitação de Mudança
+ID Mudança (deve ser resgatado do List, será o ponto de controle, tentar exibir em modo leitura)
+Título Mudança (também já é informação existente no list, tentar exibir em modo leitura)
+Custo da Mudança (R$) (tipo Moeda ou Número)
+Duração estimada da Implementação (dias) (tipo Número)
+Principais Causas e Justificativa (tipo Texto Multilinha)
+Parecer Técnico (Gestor do Solicitante) (tipo Texto Curto) [COLUNA NÃO OBRIGATÓRIA]
+Data do Parecer Técnico (tipo Data) [COLUNA NÃO OBRIGATÓRIA]
+Observações (tipo Texto Multilinhas) [COLUNA NÃO OBRIGATÓRIA]
+Attachments (opção de Anexos nativa do List)
+ 
+ 
+Formulário de Impacto
+ID Mudança (deve ser resgatado do List, será o ponto de controle, tentar exibir em modo leitura)
+Título Mudança (também já é informação existente no list, tentar exibir em modo leitura)
+Impacto em prazo
+Impacto em custo
+Impacto em qualidade
+Impacto em risco
+Impacto em SSMA
+Valor total aprovado para implementação (R$)
+Valor do impacto aprovado no CapEx (R$)
+Impacto na duração do projeto (dias)
+Aprovador (tipo Pessoa da Organização)
+Data prevista de término da implementação (Data de aprovação + estimativa de dias)
+Data da aprovação/reprovação (preencher automático)
+Motivo da aprovação/reprovação (preencher automático)
+ 
+Encerramento da Mudança
+Status implantação (coluna automática conforme preenchimento das colunas)
+Data de Conclusão da Mudança
+Responsável Implementação (tipo Pessoa da Organização)
+Verificação de Eficácia da Mudança realizada (Sim ou Não)
+Lições Aprendidas (texto Multilinha)
+Comentários (texto Multilinha)
+Evidência (opção Attachments do List)
+
 Segurança da Informação: Os campos críticos de aprovação ficam escondidos do solicitante. Ninguém consegue "burlar" o processo porque a lógica está blindada no back-end.
 
 Experiência Premium (UX): Entregamos um produto que não parece uma planilha, mas sim um software encomendado e personalizado (Cores e tipografia da Eneva, responsivo e focado no usuário).
